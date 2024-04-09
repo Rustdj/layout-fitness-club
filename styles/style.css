@@ -1,6 +1,7 @@
 :root {
   --main-color: #9dc8bf;
   --color-a: #ffff;
+  --cards-transparent: #c1f5ea;
 }
 a {
   color: var(--color-a);
@@ -9,6 +10,165 @@ a {
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
+/* burger menu */
+.navbar {
+  /* display: none; */
+}
+.navbar__container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: var(--main-color);
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__wrap .menu > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* media queri burger */
+
+@media (max-width: 768px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+    margin-left: 87vh;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+
+/*  */
 
 .header__container {
   display: flex;
@@ -204,6 +364,11 @@ body {
   .section {
     height: 100%;
   }
+  .hamb {
+    display: flex;
+    align-items: center;
+    margin-left: 35vh;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -298,4 +463,67 @@ body {
     top: 12vh;
     width: 1px;
   }
+  .hamb {
+    display: flex;
+    align-items: center;
+    margin-left: 25vh;
+  }
+}
+
+/* info block */
+
+.infoBlock__transparent-descr {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.transparent-descr__card {
+  position: absolute;
+  left: 0;
+  width: 255px;
+  height: 340px;
+  background-color: var(--cards-transparent);
+  opacity: 0.6;
+}
+.transparent-descr__card2 {
+  position: absolute;
+  left: 259px;
+  width: 255px;
+  height: 340px;
+  background-color: var(--cards-transparent);
+  opacity: 0.6;
+}
+.transparent-descr__card3 {
+  position: absolute;
+  right: 265px;
+  width: 255px;
+  height: 340px;
+  background-color: var(--cards-transparent);
+  opacity: 0.6;
+}
+.transparent-descr__card4 {
+  position: absolute;
+  right: 0;
+  width: 255px;
+  height: 340px;
+  background-color: var(--cards-transparent);
+  opacity: 0.6;
+}
+.transparent-descr__card-title {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.transparent-descr__card-description {
+  margin: 30px 56px;
+  text-align: center;
+  font-size: 20px;
+}
+.transparent-descr__line {
+  margin: 20px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 2px solid #333;
 }
