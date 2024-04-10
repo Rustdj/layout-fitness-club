@@ -469,46 +469,116 @@ body {
     margin-left: 25vh;
   }
 }
+/* mediaqueri */
 
 /* info block */
 
-.infoBlock__transparent-descr {
-  position: relative;
+.infoBlock__photo {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 30px;
 }
+
+.infoBlock__title {
+  font-size: 50px;
+  font-weight: semi-bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.infoBlock__transparent-descr {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 113vh;
+}
+
 .transparent-descr__card {
   position: absolute;
-  left: 0;
+  left: -64px;
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
   opacity: 0.6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .transparent-descr__card2 {
   position: absolute;
-  left: 259px;
+  left: 262px;
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
   opacity: 0.6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .transparent-descr__card3 {
   position: absolute;
-  right: 265px;
+  right: 136px;
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
   opacity: 0.6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .transparent-descr__card4 {
   position: absolute;
-  right: 0;
+  right: 462px;
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
   opacity: 0.6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
+
+/* hover */
+
+.transparent-descr__card:hover {
+  /* transform: translateY(200px);
+  transition: 0.8s; */
+  opacity: 0.2;
+  /* background: rgba(205, 214, 219, 0.3); */
+  /* filter: blur(100px); */
+  /* clip-path: circle(0.1); */
+  transform: rotateX(-50deg);
+}
+.transparent-descr__card2:hover {
+  /* transform: translateY(200px);
+  transition: 0.8s; */
+  opacity: 0.2;
+  /* background: rgba(205, 214, 219, 0.3); */
+  /* filter: blur(100px); */
+  /* clip-path: circle(0.1); */
+  transform: rotateX(-50deg);
+}
+.transparent-descr__card3:hover {
+  /* transform: translateY(200px);
+  transition: 0.8s; */
+  opacity: 0.2;
+  /* background: rgba(205, 214, 219, 0.3); */
+  /* filter: blur(100px); */
+  /* clip-path: circle(0.1); */
+  transform: rotateX(-50deg);
+}
+.transparent-descr__card4:hover {
+  /* transform: translateY(200px);
+  transition: 0.8s; */
+  opacity: 0.2;
+  /* background: rgba(205, 214, 219, 0.3); */
+  /* filter: blur(100px); */
+  /* clip-path: circle(0.1); */
+  transform: rotateX(-50deg);
+}
+
+/*  */
+
 .transparent-descr__card-title {
   text-align: center;
   margin: 30px 0px;
@@ -526,4 +596,98 @@ body {
   height: 0;
   border: none;
   border-top: 2px solid #333;
+}
+
+/* mediaqueri infoblock */
+
+@media screen and (max-width: 1024px) {
+  .infoBlock__transparent-descr {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 113vh;
+  }
+  .infoBlock__photo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .infoBlock__photo img {
+    width: 200px;
+  }
+  .transparent-descr__card {
+    left: -164px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card2 {
+    left: 77px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card3 {
+    right: 207px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card4 {
+    right: 447px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card-description {
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .transparent-descr__card-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .infoBlock__transparent-descr {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 113vh;
+  }
+  .infoBlock__photo {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 50vh;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .infoBlock__photo img {
+    width: 200px;
+  }
+  .transparent-descr__card {
+    left: -164px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card2 {
+    left: 77px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card3 {
+    right: 207px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card4 {
+    right: 447px;
+    width: 200px;
+    height: 267px;
+  }
+  .transparent-descr__card-description {
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .transparent-descr__card-title {
+    font-size: 22px;
+  }
 }
