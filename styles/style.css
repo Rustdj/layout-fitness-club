@@ -11,9 +11,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 /* burger menu */
-.navbar {
-  /* display: none; */
-}
+
 .navbar__container {
   width: 100%;
   max-width: 1000px;
@@ -206,6 +204,7 @@ body {
 }
 
 /* content */
+
 
 .section {
   background-color: #d8f5f0;
@@ -474,7 +473,44 @@ body {
 
 /* info block */
 
-.infoBlock__photo {
+.boxes-transparent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  bottom: 340px;
+}
+
+.box-trans1 {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+}
+.box-trans2 {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+}
+.box-trans3 {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+}
+.box-trans4 {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+}
+
+.info-block__photo {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
@@ -494,9 +530,7 @@ body {
   left: 113vh;
 }
 
-.transparent-descr__card {
-  position: absolute;
-  left: -664px;
+.box-trans1 {
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
@@ -505,9 +539,7 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
-.transparent-descr__card2 {
-  position: absolute;
-  left: 62px;
+.box-trans2 {
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
@@ -516,9 +548,7 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
-.transparent-descr__card3 {
-  position: absolute;
-  right: 136px;
+.box-trans3 {
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
@@ -527,9 +557,7 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
-.transparent-descr__card4 {
-  position: absolute;
-  right: 462px;
+.box-trans4 {
   width: 255px;
   height: 340px;
   background-color: var(--cards-transparent);
@@ -541,7 +569,7 @@ body {
 
 /* hover */
 
-.transparent-descr__card:hover {
+.box-trans1:hover {
   /* transform: translateY(200px);
   transition: 0.8s; */
   opacity: 0.2;
@@ -550,7 +578,7 @@ body {
   /* clip-path: circle(0.1); */
   transform: rotateX(-50deg);
 }
-.transparent-descr__card2:hover {
+.box-trans2:hover {
   /* transform: translateY(200px);
   transition: 0.8s; */
   opacity: 0.2;
@@ -559,7 +587,7 @@ body {
   /* clip-path: circle(0.1); */
   transform: rotateX(-50deg);
 }
-.transparent-descr__card3:hover {
+.box-trans3:hover {
   /* transform: translateY(200px);
   transition: 0.8s; */
   opacity: 0.2;
@@ -568,7 +596,7 @@ body {
   /* clip-path: circle(0.1); */
   transform: rotateX(-50deg);
 }
-.transparent-descr__card4:hover {
+.box-trans4:hover {
   /* transform: translateY(200px);
   transition: 0.8s; */
   opacity: 0.2;
