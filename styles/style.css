@@ -205,7 +205,6 @@ body {
 
 /* content */
 
-
 .section {
   background-color: #d8f5f0;
   display: flex;
@@ -474,11 +473,11 @@ body {
 /* info block */
 
 .boxes-transparent {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
   position: relative;
-  bottom: 340px;
+  top: -340px;
 }
 
 .box-trans1 {
@@ -511,23 +510,10 @@ body {
 }
 
 .info-block__photo {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
   margin-top: 30px;
-}
-
-.infoBlock__title {
-  font-size: 50px;
-  font-weight: semi-bold;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.infoBlock__transparent-descr {
-  display: flex;
-  justify-content: space-evenly;
-  position: absolute;
-  left: 113vh;
 }
 
 .box-trans1 {
@@ -628,363 +614,41 @@ body {
 }
 
 /* mediaqueri infoblock */
-
-/* @media screen and (max-width: 1440px) {
-  .transparent-descr__card {
-    left: -685px;
-    width: 255px;
-    top: 30px;
-  }
-  .transparent-descr__card2 {
-    left: -350px;
-    width: 255px;
-    top: 30px;
-  }
-  .transparent-descr__card3 {
-    right: -242px;
-    width: 255px;
-    top: 30px;
-  }
-  .transparent-descr__card4 {
-    right: -577px;
-    width: 255px;
-    top: 30px;
-  }
-} */
+/* transparent */
 
 @media screen and (max-width: 1024px) {
-  .infoBlock__transparent-descr {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 113vh;
+  .boxes-transparent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    position: relative;
+    top: -680px;
+    row-gap: 45px;
   }
-  .infoBlock__photo {
-    display: flex;
-    justify-content: space-evenly;
+  .info-block__photo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
     margin-top: 30px;
-  }
-  .infoBlock__photo img {
-    width: 200px;
-  }
-  .transparent-descr__card {
-    left: -647px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card2 {
-    left: -406px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card3 {
-    right: -36px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card4 {
-    right: -277px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card-description {
-    margin: 20px;
-    text-align: center;
-    font-size: 16px;
-  }
-  .transparent-descr__card-title {
-    font-size: 22px;
+    position: relative;
+    row-gap: 45px;
+    top: 45px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .infoBlock__transparent-descr {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 61vh;
-  }
-  .infoBlock__photo {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 50vh;
-    gap: 20px;
-    margin-top: 30px;
-  }
-  .infoBlock__photo img {
-    width: 200px;
-  }
-  .transparent-descr__card {
-    left: -257px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card2 {
-    left: 73px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card3 {
-    right: 57px;
-    width: 200px;
-    height: 267px;
-    top: 358px;
-  }
-  .transparent-descr__card4 {
-    left: 73px;
-    width: 200px;
-    height: 267px;
-    top: 359px;
-  }
-  .transparent-descr__card-description {
-    margin: 20px;
-    text-align: center;
-    font-size: 16px;
-  }
-  .transparent-descr__card-title {
-    font-size: 22px;
-  }
 }
 
 @media screen and (max-width: 430px) {
-  .infoBlock__transparent-descr {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 61vh;
-  }
-  .infoBlock__photo {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 50vh;
-    gap: 20px;
-    margin-top: 30px;
-  }
-  .infoBlock__photo img {
-    width: 200px;
-  }
-  .transparent-descr__card {
-    left: -371px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card2 {
-    left: -151px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card3 {
-    right: 171px;
-    width: 200px;
-    height: 267px;
-    top: 358px;
-  }
-  .transparent-descr__card4 {
-    left: -151px;
-    width: 200px;
-    height: 267px;
-    top: 359px;
-  }
-  .transparent-descr__card-description {
-    margin: 20px;
-    text-align: center;
-    font-size: 16px;
-  }
-  .transparent-descr__card-title {
-    font-size: 22px;
-  }
-  .infoBlock__title {
-    font-size: 33px;
-  }
 }
 
 @media screen and (max-width: 425px) {
-  .infoBlock__transparent-descr {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 61vh;
-  }
-  .infoBlock__photo {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 50vh;
-    gap: 20px;
-    margin-top: 30px;
-  }
-  .infoBlock__photo img {
-    width: 200px;
-  }
-  .transparent-descr__card {
-    left: -373px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card2 {
-    left: -154px;
-    width: 200px;
-    height: 267px;
-    top: 30px;
-  }
-  .transparent-descr__card3 {
-    right: 173px;
-    width: 200px;
-    height: 267px;
-    top: 358px;
-  }
-  .transparent-descr__card4 {
-    left: -154px;
-    width: 200px;
-    height: 267px;
-    top: 359px;
-  }
-  .transparent-descr__card-description {
-    margin: 20px;
-    text-align: center;
-    font-size: 16px;
-  }
-  .transparent-descr__card-title {
-    font-size: 22px;
-  }
-  .infoBlock__title {
-    font-size: 33px;
+  .boxes-transparent {
+    top: -1450px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .infoBlock__transparent-descr {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 61vh;
-  }
-  .infoBlock__photo {
-    display: grid;
-    grid-template-columns: 170px 170px;
-    grid-template-rows: 36vh;
-    margin-top: 30px;
-  }
-  .infoBlock__photo img {
-    width: 200px;
-  }
-  .transparent-descr__card {
-    left: -368px;
-    width: 170px;
-    height: 227px;
-    top: 30px;
-    border-radius: 17px;
-  }
-  .transparent-descr__card2 {
-    left: -178px;
-    width: 170px;
-    height: 227px;
-    top: 30px;
-    border-radius: 17px;
-  }
-  .transparent-descr__card3 {
-    right: 198px;
-    width: 170px;
-    height: 227px;
-    top: 272px;
-    border-radius: 17px;
-  }
-  .transparent-descr__card4 {
-    left: -178px;
-    width: 170px;
-    height: 227px;
-    top: 272px;
-    border-radius: 17px;
-  }
-  .transparent-descr__card-description {
-    margin: 20px;
-    text-align: center;
-    font-size: 14px;
-  }
-  .transparent-descr__card-title {
-    font-size: 15px;
-  }
-  .infoBlock__title {
-    font-size: 20px;
-  }
-  .infoBlock__photo img {
-    width: 170px;
-  }
 }
 @media screen and (max-width: 320px) {
-  .infoBlock__transparent-descr {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    left: 61vh;
-    display: none;
-  }
-  .infoBlock__photo {
-    display: grid;
-    grid-template-columns: 94px 110px;
-    grid-template-rows: 23vh;
-    margin-top: 30px;
-  }
-  .infoBlock__photo img {
-    width: 200px;
-  }
-  .transparent-descr__card {
-    left: -338px;
-    width: 105px;
-    height: 145px;
-    top: 30px;
-    border-radius: 10px;
-  }
-  .transparent-descr__card2 {
-    left: -214px;
-    width: 105px;
-    height: 145px;
-    top: 30px;
-    border-radius: 10px;
-  }
-  .transparent-descr__card3 {
-    right: 249px;
-    width: 105px;
-    height: 145px;
-    top: 197px;
-    border-radius: 10px;
-  }
-  .transparent-descr__card4 {
-    left: -214px;
-    width: 105px;
-    height: 145px;
-    top: 197px;
-    border-radius: 10px;
-  }
-  .transparent-descr__card-description {
-    margin: 15px;
-    text-align: center;
-    font-size: 9px;
-  }
-  .transparent-descr__card-title {
-    font-size: 9px;
-    margin: 15px 0px;
-  }
-  .infoBlock__title {
-    font-size: 20px;
-  }
-  .infoBlock__photo img {
-    width: 105px;
-    height: 145px;
-  }
-  .section {
-    min-height: 0px;
-  }
-  .transparent-descr__line {
-    border-top: 1px solid #333;
-    margin: 7px 0;
-  }
 }
