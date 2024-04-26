@@ -633,6 +633,7 @@ input:invalid {
 .karusel__slider {
   display: flex;
   column-gap: 20px;
+  transition: transform 0.5s ease-in-out;
 }
 .karusel__slider img {
   min-width: 100%;
@@ -658,6 +659,21 @@ input:invalid {
 .karusel__footer-kontact h2 {
   color: var(--color-a);
   font-family: sans-serif;
+}
+.karusel__arrow {
+  position: relative;
+  top: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.arrow-left {
+  position: relative;
+  cursor: pointer;
+}
+.arrow-right {
+  position: relative;
+  cursor: pointer;
 }
 
 /* media quari */
@@ -746,7 +762,6 @@ input:invalid {
   }
 }
 @media screen and (max-width: 320px) {
-  
   lable {
     width: 100%;
   }
