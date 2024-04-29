@@ -1,0 +1,96 @@
+:root {
+  --main-color: #9dc8bf;
+  --color-a: #ffff;
+  --cards-transparent: #c1f5ea;
+  --color-title: #338273;
+}
+a {
+  color: var(--color-a);
+  text-decoration: none;
+}
+html {
+  height: 100%;
+}
+body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 1fr auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  font-family: sans-serif;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.header__nav-list :hover {
+  color: #0b332a;
+  transition: all 0.5s ease;
+}
+.header__nav-list :focus {
+  text-decoration: underline #bab2b2;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
+}
+.header__nav-list li {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.header__nav-list li :last-child {
+  margin-right: 20px;
+}
+
+/* main-container */
+.main__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+  padding: 50px 60px 50px 60px;
+  column-gap: 30px;
+}
+.main__descr {
+  display: grid;
+  max-width: 500px;
+  align-items: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 23px;
+  color: var(--color-title);
+}
+
+/* footer */
+.karusel__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  background-color: var(--main-color);
+}
+.karusel__footer-kontact h2 {
+  color: var(--color-a);
+  font-family: sans-serif;
+}
+.descr {
+  overflow: hidden;
+  max-width: 207px;
+  color: var(--color-a);
+  font-family: sans-serif;
+}
+.logo-kontact {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}

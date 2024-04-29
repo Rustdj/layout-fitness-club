@@ -10,6 +10,7 @@ a {
 }
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
+  height: 100%;
 }
 /* burger menu */
 
@@ -633,10 +634,10 @@ input:invalid {
 .karusel__slider {
   display: flex;
   column-gap: 20px;
-  transition: transform 0.5s ease-in-out;
 }
 .karusel__slider img {
   min-width: 100%;
+  animation: show 1.3s 1;
 }
 .karusel__footer {
   display: flex;
@@ -675,6 +676,13 @@ input:invalid {
   position: relative;
   cursor: pointer;
 }
+/* animation slider */
+@keyframes show {
+  0% {
+    opacity: 10%;
+    transform: translate 0.2s ease;
+  }
+}
 
 /* media quari */
 
@@ -702,12 +710,31 @@ input:invalid {
     margin-top: -590px;
     overflow: auto;
   }
+  .karusel__arrow {
+    position: relative;
+    top: -323px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .karusel__arrow {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
   .karusel-box {
-    margin-top: -590px;
+    margin-top: 0px;
     overflow: auto;
+  }
+  .info__block {
+    max-height: 860px;
+  }
+  .karusel {
   }
 }
 
@@ -715,6 +742,20 @@ input:invalid {
   .karusel-box {
     margin-top: -590px;
     overflow: auto;
+  }
+  .info__block {
+    max-height: 2215px;
+  }
+  .karusel-box {
+    margin-top: 0px;
+    overflow: auto;
+  }
+  .info__block {
+    max-height: 2400px;
+  }
+  .karusel__arrow {
+    top: 105px;
+    display: flex;
   }
 }
 
@@ -745,6 +786,24 @@ input:invalid {
     margin-top: -590px;
     overflow: auto;
   }
+  .karusel__arrow {
+    position: relative;
+    top: -472px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .karusel-box {
+    margin-top: 0px;
+    overflow: auto;
+  }
+  .info__block {
+    max-height: 1635px;
+  }
+  .karusel__arrow {
+    top: 105px;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -757,8 +816,15 @@ input:invalid {
   /* karusel */
 
   .karusel-box {
-    margin-top: -590px;
+    margin-top: 0px;
     overflow: auto;
+  }
+  .info__block {
+    max-height: 1635px;
+  }
+  .karusel__arrow {
+    top: 105px;
+    display: flex;
   }
 }
 @media screen and (max-width: 320px) {
@@ -795,6 +861,20 @@ input:invalid {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  }
+  .karusel-box {
+    margin-top: 0px;
+    overflow: auto;
+  }
+  .info__block {
+    max-height: 1635px;
+  }
+  .karusel__arrow {
+    top: 105px;
+    display: flex;
+  }
+  .section__content {
+
   }
 }
 /* --> */

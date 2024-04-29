@@ -10,7 +10,7 @@ let sliderIndex = 0;
 // устанавливаем обработчики событий к кнопкам
 prevButton.addEventListener('click', showPreveusSlide);
 nextButton.addEventListener('click', showNextSlide);
-slider.style.transform = `translateX(${slideOffset}px)`;
+slides.style.transform = `translateX(${slideOffset}px)`;
 
 // Функция для показа слайда
 function showPreveusSlide() {
