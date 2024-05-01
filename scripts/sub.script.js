@@ -13,7 +13,7 @@ prevBtn.addEventListener('click', showPrevBtn);
 // Функция для показа карточки с опросом
 
 function showPrevBtn() {
-    calcSliderIndex = (calcSliderIndex - 1 + calcSliderCount ) % calcSliderCount;
+    calcSliderIndex = (calcSliderIndex +1 + calcSliderCount  ) % calcSliderCount;
     calcUpdateSlider();
 }
 
@@ -28,3 +28,7 @@ function calcUpdateSlider() {
         }
     })
 }
+
+
+
+
