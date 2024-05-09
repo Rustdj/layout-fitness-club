@@ -1,59 +1,328 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/schedule.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/schedule.css" />
     <title>Расписание-тренировок</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-          <div class="header__logo">
-            <a href="index.html"><img src="./images/logos/logomain.png" alt="logomain" /></a>
-          </div>
-          <div class="hamb">
-            <div class="hamb__field" id="hamb">
-              <span class="bar"></span> <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </div>
-  
-          <!--  -->
-  
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li><a href="subscription.html">Абонементы</a></li>
-              <li><a href="#">Расписание</a></li>
-              <li><a href="coaches.html">Тренеры</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li>
-                <img src="./images/logos/phone.svg" alt="phone" /><a href="tel:8123375538"
-                  >(812) 337-55-38</a
-                >
-              </li>
-              <li><img src="./images/logos/vk-logo.svg" alt="vk-logo" /></li>
-              <li><img src="./images/logos/telegram-logo.svg" alt="telegram-logo" /></li>
-            </ul>
-          </nav>
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="index.html"><img src="./images/logos/logomain.png" alt="logomain" /></a>
         </div>
-      </header>
-      <div class="karusel__footer">
-        <div class="karusel__footer-kontact">
-          <h2>Доступный фитнес личных достижений</h2>
-          <div class="logo-kontact">
-            <img src="images/logos/logomain.png" alt="logo-kontact" />
-            <div class="phons-kontact">
-              <a href="tel:8123375538">(812) 337-55-38</a>
-              <a href="tel:8123691283">(812) 369-12-83</a>
-            </div>
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
-        <div class="karusel__footer-adress">
-          <div class="descr">
-            г. Санкт-Петербург м. Московский ворота м. Электросила Московский пр., 150 корп. 2.
+
+        <!--  -->
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="subscription.html">Абонементы</a></li>
+            <li><a class="underline" href="#">Расписание</a></li>
+            <li><a href="coaches.html">Тренеры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li>
+              <img src="./images/logos/phone.svg" alt="phone" /><a href="tel:8123375538"
+                >(812) 337-55-38</a
+              >
+            </li>
+            <li><img src="./images/logos/vk-logo.svg" alt="vk-logo" /></li>
+            <li><img src="./images/logos/telegram-logo.svg" alt="telegram-logo" /></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ========= -->
+    <main class="shedule">
+      <div class="shedule__container">
+        <div class="shedule__title">Расписание занятий</div>
+        <div class="shedule__descr">
+          <p>
+            В сетке расписания ниже представлены одновременно все виды занятий, проходящих в Дворце
+            спорта Волна (и детские и взрослые).
+          </p>
+        </div>
+        <div class="shedule__grid-days">
+          <div class="square-day">ПН</div>
+          <div class="square-day">ВТ</div>
+          <div class="square-day">СР</div>
+          <div class="square-day">ЧТ</div>
+          <div class="square-day">ПТ</div>
+          <div class="square-day">СБ</div>
+          <div class="square-day">ВС</div>
+        </div>
+        <div class="shedule-wrapper">
+          <div class="shedule__grid-times">
+            <div class="square-time">9:00</div>
+            <div class="square-time">10:00</div>
+            <div class="square-time">11:00</div>
+            <div class="square-time">12:00</div>
+            <div class="square-time">13:00</div>
+            <div class="square-time">14:00</div>
+            <div class="square-time">15:00</div>
+            <div class="square-time">16:00</div>
+            <div class="square-time">17:00</div>
+            <div class="square-time">18:00</div>
+            <div class="square-time">19:00</div>
+          </div>
+          <div class="shedule__grid">
+            <div class="shedule__square-green">
+              <div class="description"><p>Школа плавания (взрослые) Начальный уровень</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Атлетическая гимнастика 6-8 лет</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Атлетическая гимнастика 8-12 лет</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Атлетическая гимнастика подростки</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Большой теннис (взрослые)</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Большой теннис с 7 лет</p></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Растяжка. Начальный уровень</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Растяжка. Продолжающие</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Растяжка. Средний уровень</p></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Здоровая осанка</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Бодибилдинг для всех</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Жиросжигающая тренировка для женщин</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Body-sculpt</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Body-form</p></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Pilates</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Step-n-sculpt</p></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Aqua-Boot camp (Занятие только в воде)</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Водное поло</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Айкидо взрослые и подростки</p></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Aqua-ABS (Занятие только в воде)</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Aqua - здоровые лёгкие</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Коррекция осанки</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Совершенство-<br>вание техники плавания</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Функциональная тренировка</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Фитнес-бикини</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square-green">
+              <div class="description"><p>Stretch+ MFR</p></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
+            <div class="shedule__square">
+              <div class="description"></div>
+            </div>
           </div>
         </div>
       </div>
-</body>
+    </main>
+    <footer class="karusel__footer">
+      <div class="karusel__footer-kontact">
+        <h2>Доступный фитнес личных достижений</h2>
+        <div class="logo-kontact">
+          <img src="images/logos/logomain.png" alt="logo-kontact" />
+          <div class="phons-kontact">
+            <a href="tel:8123375538">(812) 337-55-38</a>
+            <a href="tel:8123691283">(812) 369-12-83</a>
+          </div>
+        </div>
+      </div>
+      <div class="karusel__footer-adress">
+        <div class="descr">
+          г. Санкт-Петербург м. Московский ворота м. Электросила Московский пр., 150 корп. 2.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

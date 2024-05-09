@@ -125,6 +125,11 @@
     background-color: var(--main-color);
     font-family: sans-serif;
   }
+  .underline {
+    text-decoration: underline #bab2b2;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+  }
   
   .header__nav-list {
     display: flex;

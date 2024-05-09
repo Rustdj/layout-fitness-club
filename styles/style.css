@@ -635,10 +635,7 @@ input:invalid {
   display: flex;
   column-gap: 20px;
 }
-.karusel__slider img {
-  min-width: 100%;
-  animation: show 1.3s 1;
-}
+
 .karusel__footer {
   display: flex;
   justify-content: space-around;
@@ -677,6 +674,12 @@ input:invalid {
   cursor: pointer;
 }
 /* animation slider */
+
+.karusel__slider img {
+  min-width: 100%;
+  animation: show 1.3s 1;
+}
+
 @keyframes show {
   0% {
     opacity: 10%;
@@ -734,8 +737,7 @@ input:invalid {
   .info__block {
     max-height: 860px;
   }
-  .karusel {
-  }
+  
 }
 
 @media screen and (max-width: 430px) {
@@ -873,8 +875,6 @@ input:invalid {
     top: 105px;
     display: flex;
   }
-  .section__content {
-
-  }
+  
 }
 /* --> */

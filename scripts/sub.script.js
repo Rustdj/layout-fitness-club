@@ -1,33 +1,51 @@
 // calc-cards-slider -------------------------------------------------------------
 
-const calcSlider = document.querySelector('.container-calc__cards');
-const prevBtn = document.querySelector('button');
-const calcSlides = Array.from(calcSlider.querySelectorAll('.calculator'));
-const calcSliderCount = calcSlides.length;
-let calcSliderIndex = 0;
 
-// обработчики событий к кнопке
+/* Устанавливаем стартовый индекс слайда по умолчанию: */
+let slideIndex = 1;
+/* Вызываем функцию, которая реализована ниже: */
+showSlides(slideIndex);
 
-prevBtn.addEventListener('click', showPrevBtn);
-
-// Функция для показа карточки с опросом
-
-function showPrevBtn() {
-    calcSliderIndex = (calcSliderIndex +1 + calcSliderCount  ) % calcSliderCount;
-    calcUpdateSlider();
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+function nextSlide() {
+    showSlides(slideIndex += 1);
 }
 
-// функция для обновления отображения
-
-function calcUpdateSlider() {
-    calcSlides.forEach((slide, index) => {
-        if (index === calcSliderIndex) {
-            slide.style.display = 'block';
-        } else {
-            slide.style.display = 'none';
-        }
-    })
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
 }
+
+/* Устанавливаем текущий слайд: */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Функция перелистывания: */
+function showSlides(n) {
+    /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+    let slides = document.getElementsByClassName("calculator");
+    
+    /* Проверяем количество слайдов: */
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+  
+    /* Проходим по каждому слайду в цикле for: */
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    /* Делаем элемент блочным: */
+    slides[slideIndex - 1].style.display = "block";    
+}
+
+// const a = 'header__nav-list'
+// localStorage.setItem('a', a)
+
+// console.log(a)
 
 
 
