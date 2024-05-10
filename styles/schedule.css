@@ -480,6 +480,7 @@ body {
   overflow-x: hidden;
   visibility: hidden;
   transition: all 0.5s;
+  backdrop-filter: blur(8px);
 }
 .modal__body:target {
   opacity: 1;
@@ -498,14 +499,35 @@ body {
 .modal__page {
   width: 501px;
   max-height: 100%;
-  border-radius: 30px;
+  border-radius: 7px;
   overflow: auto;
-  background-color: #d2d2d2;
+  background-color: var(--cards-transparent);
   padding: 20px;
   box-shadow: 2px 4px 20px 7px #8e7777;
   position: fixed;
   transform: translate(73%, 20%);
   z-index: 5;
+}
+
+.modal-title {
+}
+.modal-time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-time {
+  display: grid;
+  grid-template-columns: 40px 40px;
+  align-items: center;
+}
+.modal-descr {
+  text-align: center;
+  margin-top: 30px;
+}
+.modal-logo {
+  display: flex;
+  justify-content: unset;
 }
 
 .close {
@@ -613,8 +635,18 @@ input[type='radio'] {
     padding-bottom: 10px;
     margin-top: 20px;
   }
+  .modal__page {
+    position: fixed;
+    transform: translate(43%, 11%);
+    z-index: 5;
+  }
 }
 @media (max-width: 768px) {
+  .modal__page {
+    position: fixed;
+    transform: translate(29%, 20%);
+    z-index: 5;
+  }
   .shedule__grid-times {
     display: grid;
     gap: 10px;
@@ -636,7 +668,7 @@ input[type='radio'] {
     padding: 20px;
     box-shadow: 2px 4px 20px 7px #8e7777;
     position: fixed;
-    right: 65%;
+    right: 36%;
     top: 20%;
     z-index: 5;
   }
@@ -701,7 +733,7 @@ input[type='radio'] {
     padding: 20px;
     box-shadow: 2px 4px 20px 7px #8e7777;
     position: fixed;
-    right: 65%;
+    right: 31%;
     top: 20%;
     z-index: 5;
   }
