@@ -42,10 +42,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";    
 }
 
-// const a = 'header__nav-list'
-// localStorage.setItem('a', a)
 
-// console.log(a)
 
 
 
