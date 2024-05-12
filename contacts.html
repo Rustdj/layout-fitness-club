@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/contacts.css" />
+    <script src="/assets/js/jquery-3.7.0.min.js"></script>
     <title>Контакты</title>
   </head>
   <body>
@@ -38,6 +39,80 @@
         </nav>
       </div>
     </header>
+    <section class="location">
+      <div class="location-wrap">
+        <div class="loc-title"><h1>Контакты</h1></div>
+        <div class="loc-phone">
+          Телефон: <a style="color: #2eda18" href="tel:+78123375538"> (812) 337-55-38</a> <br />
+          Отдел по работе с юр. лицами и образовательными учреждениями:
+          <a style="color: #2eda18" href="tel:+78123691283"> (812) 369-12-83</a>
+        </div>
+        <div class="loc-adress">
+          Адрес: 196084, Санкт-Петербург, Московский проспект, д. 150 к. 2 <br />
+          E-mail:
+          <a style="color: #2eda18" href="mailto:basseyn.volna@mail.ru"> basseyn.volna@mail.ru</a>
+        </div>
+        <div class="loc-map">
+          <div class="map-descr">
+            Режим работы: <br />
+            понедельник - пятница: c 6:45 до 23:00суббота: с 06:45 до 22:00воскресенье: c 8:00 до
+            22:00
+          </div>
+          <div class="map-api">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=30.314997%2C59.938784&z=11"
+              width="860"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="form-description">
+        <p align="justify">
+          Не так-то просто найти хороший спортивный клуб в своем районе. Одни клубы слишком дорогие,
+          в других нет необходимых условий для эффективных занятий, хотя и цена приемлемая. В этом
+          случае гораздо больше повезло жителям Московского района Санкт-Петербурга. Фитнес клуб
+          «Волна» уже успел заработать хорошую репутацию и признание своих клиентов. С ним не
+          сравнятся другие недорогие тренажерные залы в Московском районе. Приемлемые цены,
+          прекрасные условия для занятий спортом, выгодные предложения и эффективные программы – все
+          это лишь малая часть преимуществ, которыми отличается наш тренажерный зал в СПб,
+          Московский район. <br> <h2>Фитнес клуб в Московском районе</h2>  <p align="justify">Вам не составит труда найти подходящий
+            дешёвый тренажерный зал в СПб. Московский район предлагает массу вариантов для своих
+            жителей. Тем не менее, спортивный клуб «Волна» пользуется неизменной популярностью. У нас
+            самые выгодные предложения не только для частных клиентов, но также и для организаций,
+            которые хотят, чтобы их сотрудники всегда были в форме, полны сил и энергии.</p>
+        </p>
+      </div>
+      <div class="form-wrap">
+        <div action="send.php" class="forma">
+          <div class="form-at">
+              <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                  <input class="input-at" type="text" name="name-at" placeholder="Ваше имя" />
+                  <span class="focus-input-at"></span>
+              </div>
+              <div class="validate-input-at w-50" data-validate="Обязательное поле">
+                  <input class="input-at" type="text" name="email-at" placeholder="Ваш телефон или email" />
+                  <span class="focus-input-at"></span>
+              </div>
+              <div class="validate-input-at" data-validate="Обязательное поле">
+                  <textarea class="input-at" name="message-at" placeholder="Ваше сообщение"></textarea>
+                  <span class="focus-input-at"></span>
+              </div>
+              <input  class="input-at" id="checkbox-at" type="checkbox" name="checkbox-at" onchange="document.getElementById('submit-at').disabled = !this.checked;" />
+              <label for="checkbox-at">
+                  Настоящим подтверждаю, что я ознакомлен и согласен с <a href="#rules">пользовательским соглашением</a>
+              </label> 
+              <input type="hidden" name="subject-at" value="Тема формы">
+              <button disabled="disabled" id="submit-at" class="form-at-btn">Отправить</button>
+          </div>
+          <div class="result-at"></div>
+      </div>
+      </div>
+    </section>
     <div class="karusel__footer">
       <div class="karusel__footer-kontact">
         <h2>Доступный фитнес личных достижений</h2>
@@ -55,5 +130,6 @@
         </div>
       </div>
     </div>
+    <script src="scripts/shedule.js"></script>
   </body>
 </html>
