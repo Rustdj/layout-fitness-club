@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/contacts.css" />
-    <script src="/assets/js/jquery-3.7.0.min.js"></script>
+    <script src="scripts/jquery.js" ></script>
     <title>Контакты</title>
   </head>
   <body>
@@ -13,14 +13,41 @@
         <div class="header__logo">
           <a href="index.html"><img src="./images/logos/logomain.png" alt="logomain" /></a>
         </div>
-        <div class="hamb">
-          <div class="hamb__field" id="hamb">
-            <span class="bar"></span> <span class="bar"></span>
-            <span class="bar"></span>
+
+        <!-- burger-menu -->
+        <div id="win" class="burger-container">
+          <a class="win-area" href="#"></a>
+          <a href="#"><div class="burger-close">X</div></a>
+          <div class="burger-menu">
+            <ul class="burger-menu_list">
+              <li><a href="subscription.html">Абонементы</a></li>
+              <li><a href="schedule.html">Расписание</a></li>
+              <li><a href="coaches.html">Тренеры</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li class="li">
+                <img src="./images/logos/phone.svg" alt="phone" /><a href="tel:8123375538"
+                  >(812) 337-55-38</a
+                >
+              </li>
+              <li><img src="./images/logos/vk-logo.svg" alt="vk-logo" /></li>
+              <li><img src="./images/logos/telegram-logo.svg" alt="telegram-logo" /></li>
+            </ul>
           </div>
         </div>
 
+        <!-- ================= -->
+        <!-- logo-burger-lines -->
+
+        <div class="hamb">
+          <a href="#win">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </a>
+        </div>
         <!--  -->
+
 
         <nav class="header__nav">
           <ul class="header__nav-list">
@@ -88,7 +115,7 @@
         </p>
       </div>
       <div class="form-wrap">
-        <div action="send.php" class="forma">
+        <form action="send.php" class="forma">
           <div class="form-at">
               <div class="validate-input-at w-50" data-validate="Обязательное поле">
                   <input class="input-at" type="text" name="name-at" placeholder="Ваше имя" />
@@ -110,7 +137,7 @@
               <button disabled="disabled" id="submit-at" class="form-at-btn">Отправить</button>
           </div>
           <div class="result-at"></div>
-      </div>
+      </form>
       </div>
     </section>
     <div class="karusel__footer">
