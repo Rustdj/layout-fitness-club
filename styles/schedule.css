@@ -14,13 +14,15 @@ a {
 html {
   height: 100%;
 }
+li {
+  list-style-type: none;
+}
 body {
   display: grid;
   min-height: 100%;
   grid-template-rows: 1fr auto;
   font-family: 'Segoe UI', Arial, sans-serif;
 }
-
 
 /* burger menu */
 .burger-container {
@@ -116,13 +118,13 @@ body {
   .burger-menu {
     position: absolute;
     top: 0;
-    width: 220px;
-    right: 100px;
+    width: 305px;
+    right: 30%;
     height: 100%;
     z-index: 3;
   }
   .burger-menu_list li {
-    font-size: 20px;
+    font-size: 28px;
   }
   .burger-menu_list {
     padding-top: 95px;
@@ -131,17 +133,30 @@ body {
 }
 @media (max-width: 375px) {
   .burger-menu {
-    width: 230px;
-    left: 87px;
+    position: absolute;
+    top: 0;
+    width: 305px;
+    right: 30%;
+    height: 100%;
+    z-index: 3;
+  }
+  .burger-menu_list li {
+    font-size: 28px;
   }
 }
 @media (max-width: 320px) {
   .burger-menu {
-    width: 220px;
-    left: 50px;
+    position: absolute;
+    top: 0;
+    width: 305px;
+    right: 30%;
+    height: 100%;
+    z-index: 3;
+  }
+  .burger-menu_list li {
+    font-size: 28px;
   }
 }
-
 
 /* media queri burger */
 
@@ -361,7 +376,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 0vh;
+    /* margin-left: 0vh; */
   }
 }
 
@@ -460,7 +475,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 5vh;
+    /* margin-left: 5vh; */
   }
 }
 /* mediaqueri */

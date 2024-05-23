@@ -11,6 +11,9 @@ a {
   color: var(--color-a);
   text-decoration: none;
 }
+li {
+  list-style-type: none;
+}
 html {
   height: 100%;
 }
@@ -117,7 +120,7 @@ body {
     position: absolute;
     top: 0;
     width: 220px;
-    right: 100px;
+    right: 37%;
     height: 100%;
     z-index: 3;
   }
@@ -132,13 +135,13 @@ body {
 @media (max-width: 375px) {
   .burger-menu {
     width: 230px;
-    left: 87px;
+    right: 37%;
   }
 }
 @media (max-width: 320px) {
   .burger-menu {
     width: 220px;
-    left: 50px;
+    right: 37%;
   }
 }
 
@@ -363,7 +366,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 0vh;
+    /* margin-left: 29vh; */
   }
 }
 
@@ -462,7 +465,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 5vh;
+    /* margin-left: 25vh; */
   }
 }
 /* mediaqueri */

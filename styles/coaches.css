@@ -11,6 +11,9 @@ a {
   color: var(--color-a);
   text-decoration: none;
 }
+li {
+  list-style-type: none;
+}
 html {
   height: 100%;
 }
@@ -361,7 +364,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 0vh;
+    margin-left: 29vh;
   }
 }
 
@@ -460,7 +463,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 5vh;
+    margin-left: 27vh;
   }
 }
 /* mediaqueri */
