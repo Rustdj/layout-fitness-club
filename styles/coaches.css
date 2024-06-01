@@ -40,6 +40,18 @@ body {
   transition: all 0.5s;
   backdrop-filter: blur(8px);
 }
+.coaches-carts {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  justify-content: space-evenly;
+  gap: 40px;
+  padding: 30px 0px;
+}
+.coaches-description {
+  padding: 30px 139px;
+  font-family: cursive;
+  font-size: 20px;
+}
 
 /* burger menu media queri burger */
 @media (max-width: 768px) {
@@ -144,11 +156,9 @@ body {
   }
 }
 
-
-
 /* media queri burger */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar__wrap .menu {
     display: none;
   }
@@ -156,7 +166,118 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 87vh;
+    margin-left: auto;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .coaches-carts {
+    grid-template-columns: repeat(3, 220px);
+  }
+  .coaches-description {
+    padding: 30px 68px;
+    font-family: cursive;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+  body {
+    display: block;
+  }
+  .coaches-carts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 30px 0px;
+  }
+  .coaches-description {
+    padding: 32px 36px;
+    font-family: cursive;
+    font-size: 14px;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
   }
 
   .hamb__field {
@@ -469,24 +590,6 @@ body {
 /* mediaqueri */
 
 /* coaches */
-.coaches-container {
-}
-.coaches-block {
-}
-.coaches-description {
-  padding: 30px 139px;
-  font-family: cursive;
-  font-size: 20px;
-}
-.coaches-wrap {
-}
-.coaches-carts {
-  display: grid;
-  grid-template-columns: repeat(4, 220px);
-  justify-content: space-evenly;
-  gap: 40px;
-  padding: 30px 0px;
-}
 
 .cart {
   min-height: 200px;
@@ -536,16 +639,7 @@ body {
 }
 
 /* media quari */
-@media screen and (max-width: 768px) {
-  .coaches-carts {
-    grid-template-columns: repeat(3, 220px);
-  }
-  .coaches-description {
-    padding: 30px 68px;
-    font-family: cursive;
-    font-size: 14px;
-  }
-}
+
 @media screen and (max-width: 425px) {
   .coaches-carts {
     grid-template-columns: repeat(2, 175px);
