@@ -23,7 +23,21 @@ body {
   grid-template-rows: 1fr auto;
   font-family: 'Segoe UI', Arial, sans-serif;
 }
-
+.loc-title {
+  padding: 0px 200px;
+}
+.map-descr {
+  padding: 21px 200px;
+}
+.loc-phone {
+  padding: 21px 200px;
+}
+.loc-adress {
+  padding: 21px 200px;
+}
+.forma {
+  padding: 40px 200px;
+}
 
 /* burger menu */
 .burger-container {
@@ -40,6 +54,9 @@ body {
   overflow-x: hidden;
   transition: all 0.5s;
   backdrop-filter: blur(8px);
+}
+.form-description {
+  padding: 30px 200px;
 }
 
 /* burger menu media queri burger */
@@ -145,20 +162,36 @@ body {
   }
 }
 
-
-
-
 /* media queri burger */
 
 @media (max-width: 768px) {
   .navbar__wrap .menu {
     display: none;
   }
+  body {
+    display: block;
+  }
+  .location {
+    background-color: var(--cards-transparent);
+    padding-top: 20px;
+  }
+  .form-description {
+    padding: 30px 31px;
+  }
+  .loc-title {
+    padding: 0px 31px;
+  }
+  .loc-phone {
+    padding: 21px 31px;
+  }
+  .loc-adress {
+    padding: 21px 31px;
+  }
 
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 87vh;
+    margin-left: auto;
   }
 
   .hamb__field {
@@ -324,6 +357,12 @@ body {
   .header__nav-list {
     display: none;
   }
+  .map-descr {
+    padding: 21px 31px;
+  }
+  .forma {
+    padding: 40px 31px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -481,24 +520,8 @@ body {
 .location {
   background-color: var(--cards-transparent);
 }
-.loc-title {
-  padding: 0px 200px;
-}
-.map-descr {
-  padding: 21px 200px;
-}
-.loc-phone {
-  padding: 21px 200px;
-}
-.loc-adress {
-  padding: 21px 200px;
-}
 
 /* form section */
-
-.form-description {
-  padding: 30px 200px;
-}
 
 ::-webkit-input-placeholder {
   font-size: 16px;
@@ -703,9 +726,7 @@ input.input-at:focus {
   font-weight: bold;
   border: 2px solid #337ab7;
 }
-.forma {
-  padding: 40px 200px;
-}
+
 @media (max-width: 768px) {
   .validate-input-at.w-50 {
     width: 100%;

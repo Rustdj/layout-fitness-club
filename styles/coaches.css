@@ -485,7 +485,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 29vh;
+    margin-left: auto;
   }
 }
 
@@ -584,7 +584,7 @@ body {
   .hamb {
     display: flex;
     align-items: center;
-    margin-left: 27vh;
+    margin-left: auto;
   }
 }
 /* mediaqueri */
